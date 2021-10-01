@@ -1,0 +1,142 @@
+.products {
+    text-align: center;
+    padding: 15rem 0 20rem;
+}
+.sub-title__box {
+    position: relative;
+    margin-bottom: 3rem;
+}
+.prod__title {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    font-family: var(--title-font);
+}
+.success-message {
+    background-color: var(--success);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    margin-bottom: 2rem;
+}
+.success-message--active {
+    opacity: 1;
+    visibility: visible;
+}
+.products .sub-title {
+    margin-bottom: 0;
+    padding-bottom: 7rem;
+}
+.products .item {
+    margin-top: 4.5rem;
+    position: relative;
+}
+.product__block {
+    max-width: 40rem;
+    padding: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.product {
+    display: block;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.product__img-box {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+.product__img-box::before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 20rem;
+    height: 20rem;
+    background-image: url("data:image/svg+xml,%0A%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg'%0AviewBox='0 0 1207.000000 1280.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,1280.000000) scale(0.100000,-0.100000)'%0Afill='%23f58e12' stroke='none'%3E%3Cpath d='M8175 12786 c-280 -68 -666 -492 -845 -926 -111 -270 -214 -833 -300%0A-1647 -22 -206 -43 -303 -84 -397 -103 -232 -335 -420 -535 -433 -91 -6 -143%0A6 -207 50 -73 49 -107 118 -112 226 -5 108 13 165 109 349 114 217 169 409%0A169 585 0 120 -21 213 -69 312 -64 131 -125 187 -309 282 -103 53 -149 56%0A-237 14 -96 -45 -129 -93 -171 -248 -27 -97 -27 -102 -28 -438 -1 -291 -3%0A-345 -17 -376 -34 -74 -117 -147 -209 -183 -71 -29 -201 -45 -283 -35 -89 10%0A-127 23 -195 66 -151 96 -272 286 -497 783 -164 362 -198 423 -285 511 -218%0A221 -487 208 -735 -37 -39 -38 -88 -96 -109 -128 -44 -66 -93 -210 -103 -297%0A-12 -116 29 -260 137 -484 139 -286 211 -355 498 -475 247 -103 301 -139 343%0A-233 21 -45 24 -67 24 -172 0 -116 -1 -122 -33 -183 -39 -75 -105 -145 -158%0A-167 -20 -8 -80 -20 -133 -26 -53 -5 -116 -15 -140 -21 -70 -18 -222 -142%0A-257 -210 -9 -17 -27 -70 -40 -117 -28 -101 -32 -259 -10 -381 66 -356 65%0A-333 6 -397 -120 -128 -249 -175 -346 -125 -21 11 -84 59 -139 106 -220 190%0A-430 307 -680 376 -215 60 -302 97 -390 164 -22 16 -170 159 -330 316 -280%0A275 -411 396 -455 420 -30 16 -83 -4 -115 -42 -92 -109 -146 -384 -96 -493 40%0A-89 114 -126 401 -200 284 -74 382 -112 505 -200 118 -83 196 -185 330 -430%0A48 -88 107 -188 132 -222 75 -107 234 -236 454 -369 154 -93 209 -161 209%0A-263 0 -26 -8 -42 -35 -67 -80 -75 -248 -105 -482 -86 -382 32 -493 86 -1103%0A535 -526 387 -572 414 -754 437 -156 19 -304 -27 -373 -118 -36 -48 -80 -177%0A-89 -262 -10 -99 40 -272 113 -390 50 -79 370 -394 468 -459 150 -100 387%0A-198 575 -238 62 -13 128 -18 245 -18 170 1 203 6 398 61 306 86 660 67 990%0A-53 263 -96 354 -236 266 -411 -39 -78 -82 -115 -211 -179 -141 -70 -264 -114%0A-469 -168 -96 -25 -204 -57 -241 -71 -87 -33 -168 -92 -207 -151 -41 -61 -75%0A-173 -75 -243 0 -141 141 -250 323 -250 103 0 139 14 222 88 109 97 424 358%0A492 408 185 137 407 77 407 -110 0 -71 -26 -137 -165 -411 -232 -457 -352%0A-642 -609 -940 -434 -502 -517 -619 -587 -825 -67 -201 -85 -381 -54 -532 22%0A-104 53 -160 147 -266 172 -192 305 -267 549 -308 203 -34 332 7 494 155 134%0A122 205 234 256 406 22 72 24 97 23 260 -1 156 -6 210 -37 400 -50 304 -60%0A408 -55 549 4 128 14 161 60 202 86 79 196 70 314 -24 135 -108 213 -290 214%0A-499 0 -160 -19 -232 -153 -569 -137 -346 -189 -543 -191 -734 -1 -132 8 -157%0A92 -231 89 -80 211 -115 366 -107 98 5 170 39 217 102 36 49 85 199 100 304%0A27 187 -23 688 -107 1079 -30 138 -30 194 -3 249 75 156 290 196 512 96 89%0A-41 122 -73 232 -234 174 -254 187 -264 319 -256 161 10 304 125 356 285 32%0A98 28 137 -25 258 -51 117 -70 196 -55 225 32 59 122 92 183 66 27 -11 52 -48%0A161 -237 679 -1173 830 -1534 1160 -2771 106 -397 136 -480 215 -596 101 -149%0A266 -282 402 -323 108 -33 176 -12 265 82 68 74 106 144 156 290 37 112 42%0A136 46 245 9 258 -66 417 -415 879 -413 547 -588 783 -673 905 -443 643 -782%0A1322 -806 1615 l-6 70 33 19 c43 25 179 34 258 16 80 -17 187 -72 264 -136%0A128 -106 241 -269 434 -629 162 -300 288 -433 466 -487 116 -35 194 -10 319%0A99 146 128 226 239 268 371 36 113 37 138 9 197 -44 94 -292 327 -418 393 -66%0A35 -216 87 -394 137 -176 49 -216 71 -322 179 -140 142 -195 252 -202 406 -5%0A82 -4 87 27 133 88 131 175 129 539 -10 502 -192 1027 -515 1531 -943 277%0A-235 314 -266 410 -337 177 -130 295 -188 487 -239 127 -34 232 -37 288 -8 53%0A27 77 65 116 181 58 174 29 274 -123 425 -79 79 -100 94 -210 147 -68 33 -247%0A103 -398 155 -548 191 -651 233 -1035 420 -430 209 -630 345 -761 519 -66 87%0A-127 217 -132 282 -4 52 -3 54 44 106 81 87 159 107 274 73 30 -9 120 -49 200%0A-89 349 -174 651 -258 834 -231 87 13 139 81 190 247 54 176 38 213 -159 376%0A-295 245 -358 353 -288 492 59 119 201 236 350 288 70 25 91 28 213 28 113 0%0A147 -4 210 -23 159 -50 342 -167 666 -427 256 -207 280 -223 343 -241 155 -46%0A352 61 438 236 43 89 93 263 93 325 0 105 -78 203 -255 321 -207 137 -451 207%0A-1045 299 -278 43 -348 58 -455 96 -167 60 -297 200 -340 366 -21 80 -20 254%0A1 299 32 68 180 172 354 250 231 102 401 147 565 148 214 1 359 -53 718 -266%0A254 -151 435 -231 642 -283 322 -82 579 -47 712 98 70 76 119 236 110 362 -14%0A209 -109 352 -457 688 -182 177 -291 261 -429 331 -361 184 -627 218 -987 126%0A-138 -35 -223 -75 -325 -152 -95 -72 -169 -157 -292 -338 -150 -220 -253 -310%0A-457 -396 -138 -58 -228 -77 -344 -72 -82 3 -111 9 -157 30 -161 74 -212 221%0A-174 506 22 162 17 270 -13 333 -12 25 -48 71 -79 102 -120 120 -211 137 -478%0A92 -179 -31 -254 -30 -333 5 -97 43 -178 155 -201 277 -23 116 55 422 204 804%0A145 372 322 654 569 907 129 133 243 230 437 375 168 125 235 189 244 234 4%0A15 13 43 21 61 19 44 18 84 -6 167 -35 124 -96 231 -180 315 -41 42 -98 88%0A-126 102 -102 55 -221 70 -329 44z'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.product__text-box {
+    text-align: left;
+    position: relative;
+}
+.product .img {
+    width: 95%;
+    max-height: 20rem;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.product__name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: var(--third-brand-color);
+}
+.product__price {
+    display: block;
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: var(--title-font);
+    color: var(--second-brand-color);
+}
+.product__btn {
+    margin-left: 0;
+}
+@media screen and (min-width: 1024px) {  
+    .products__list {
+        /* display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: .5rem; */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .products__list .item:nth-child(2) .product__block {
+        margin-top: 4rem;
+    }
+    .products__list .item:nth-child(3) .product__block {
+        margin-top: 8rem;
+    }
+    .products__list .item:nth-child(4) .product__block {
+        margin-top: 12rem;
+    }
+    .products__list .item:nth-child(5) .product__block {
+        margin-top: 16rem;
+    }
+    .products__list .item:nth-child(6) .product__block {
+        margin-top: 20rem;
+    }
+    .products .item {
+        margin-top: 0;
+        width: 32%;
+    }
+    .product__name {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 1440px) {  
+
+}
+

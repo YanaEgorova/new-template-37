@@ -1,0 +1,17 @@
+.hero__wrapper {
+   background-color: var(--second-brand-color);
+}
+.hero {
+    padding: 15rem 0;
+    text-align: center;
+}
+.hero .img {
+    max-width: 100%;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .hero .img {
+        max-width: 50%;
+    }
+}
